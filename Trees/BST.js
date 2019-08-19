@@ -1,3 +1,10 @@
+/*
+    Big O of BST
+    Insertion -> Best & Average: O(log n)
+    Creation -> Best & Average: O(log n)
+    Worst Case: Not guaranteed 😅
+*/
+
 class Node {
     constructor(value) {
         this.value = value;
@@ -51,7 +58,7 @@ class BinarySearchTree {
             } else if (value > current.value) {
                 current = current.right;
             } else {
-                return true;
+                return current;
             }
         }
 
@@ -66,5 +73,3 @@ tree.insert(2);
 tree.insert(1);
 tree.insert(20);
 tree.insert(15);
-
-console.log(tree.find(25)); // false;
