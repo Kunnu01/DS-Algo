@@ -3,6 +3,14 @@
     Insertion -> Best & Average: O(log n)
     Creation -> Best & Average: O(log n)
     Worst Case: Not guaranteed 😅
+
+    BFS or DFS? -> it depends on scenario
+    Time Complexity is Same
+
+    Space Complexity
+        BFS - Storing nodes in a queue
+                Size of queue grows as the tree grows (wide) and takes more space
+        DFS - If the tree is too long, takes more space
 */
 
 class Node {
@@ -86,8 +94,13 @@ class BinarySearchTree {
 
     /*
         PreOrder => Root, Left, Right
+            Used to export/duplicate a tree structure
+        
         PostOrder => Left, Right, Root
+        
         InOrder => Left, Root, Right
+            Used commonly with BST
+                get all trees in their underlying order
     */
 
     // Depth First Search
